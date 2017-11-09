@@ -1,7 +1,7 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict"; 
 
-  // Smooth scrolling using jQuery easing
+  // Smooth scrolling 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -15,18 +15,18 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
+  // Sluit menu na scroll
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
+  // Maak items in navbar geel als ze op een bepaald onderwerp zijn
   $('body').scrollspy({
     target: '#mainNav',
     offset: 54
   });
 
-  // Collapse the navbar when page is scrolled
+  // Sluit navigatiebar na scroll
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
@@ -35,4 +35,4 @@
     }
   });
 
-})(jQuery); // End of use strict
+})(jQuery); 
